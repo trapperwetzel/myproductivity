@@ -5,42 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productivity Website</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-    <script type="text/javascript" src="script.js"></script>
     <header>
         <div id="task-container">
-            <div id = "header">
+            <div id="header">
                 <h1>Task List: </h1>
             </div>
 
-            <div id = task-form>
+            <div id="task-form">
                 <input 
-                type="text"
-                class="input-item"
-                name = "input-box"
-                id = "input-box"
-                placeholder = "Add Task"
+                    type="text"
+                    class="input-item"
+                    name="input-box"
+                    id="input-box"
+                    placeholder="Add Task"
                 />
-
-
-                <button id = "input-button" onclick="addTask()">Add</button>
+                <button id="input-button" onclick="addTask()">Add</button>
             </div>
 
             <h2>Task List</h2>
-            <ul id = "task-list"></ul>
-        </div>
-        <hr/>
-        <div class "counter-countainer">
-            <div id = "task-counters">
-            Completed: <span id = "completed-counter">0</span> | Uncompleted: 
-            <span id = "uncompleted-counter">0</span>
-            </div>
+            <ul id="task-list"></ul>
         </div>
 
-        <script type="text/javascript" src="script.js"></script>
+        <hr/>
+
+        <div class="counter-container">
+            <div id="task-counters">
+                Completed: <span id="completed-counter">0</span> | Uncompleted: 
+                <span id="uncompleted-counter">0</span>
+            </div>
+        </div>
     </header>
-    </body>
+
     
+    <script type="text/javascript" src="script.js"></script>
+</body>
 </html>
