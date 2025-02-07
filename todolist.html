@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <header>
+    <hr>
+    
+
+    </header>
+
         <div id="task-container">
             <div id="header">
-                <h1>Task List: </h1>
+                <h1>To-Do-List</h1>
+            
             </div>
+            <hr>
 
             <div id="task-form">
                 <input 
@@ -19,24 +27,18 @@
                     class="input-item"
                     name="input-box"
                     id="input-box"
-                    placeholder="Add Task"
+                    
                 />
-                <button id="input-button" onclick="addTask()">Add</button>
+                
             </div>
-
-            <h2>Task List</h2>
+            
+            <hr>
+            
             <ul id="task-list"></ul>
         </div>
 
-        <hr/>
-
-        <div class="counter-container">
-            <div id="task-counters">
-                Completed: <span id="completed-counter">0</span> | Uncompleted: 
-                <span id="uncompleted-counter">0</span>
-            </div>
-        </div>
-    </header>
+    
+    
 
     
     <script type="text/javascript" src="script.js"></script>
