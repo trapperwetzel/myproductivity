@@ -8,7 +8,7 @@
   body { 
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,0.028124999999999956) 0%, rgba(253,187,45,1) 100%);
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin-top: 50px;
   }
@@ -59,7 +59,8 @@
     list-style: none;
     padding: 0;
     margin-top: 20px;
-    text-align:left;
+    text-align:center;
+    
   
   }
   
@@ -69,16 +70,17 @@
   margin-bottom: 10px;
   padding: 10px;
   margin-top: 10px;
+  
   }
   
   .edit-btn, .delete-btn {
     float: right;
-    color:crimson;
+    color: white;
     cursor: pointer;
     margin: 3px 5px;
-    border: none;
+    border: 5px;
     padding: 3px 5px;
-    background: none;
+    
   } 
   
   .completed {

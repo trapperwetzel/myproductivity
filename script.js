@@ -1,7 +1,15 @@
 const inputBox = document.getElementById("input-box");
-const listContainer = document.getElementById("task-list"); // Fix the correct ID
+const listContainer = document.getElementById("task-list"); 
 const completedCounter = document.getElementById("completed-counter");
 const uncompletedCounter = document.getElementById("uncompleted-counter");
+
+inputBox.addEventListener("keydown",function(event) {
+    if (event.key === "Enter") {
+        
+        addTask();
+
+    }
+});
 
 function addTask() {
     const task = inputBox.value.trim();
@@ -38,6 +46,7 @@ function addTask() {
         li.classList.toggle("completed", checkbox.checked);
         updateCounters();
     });
+
 
     // Edit task
     editBtn.addEventListener("click", function () {
