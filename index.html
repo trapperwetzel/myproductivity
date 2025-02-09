@@ -6,21 +6,15 @@
     <title>Productivity Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<header id = "headtext">{t_coding} productivity</header>
 <body>
     
-    <header>
-    <hr>
-    
-
-    </header>
-
+    <hr id = "titleline";>
         <div id="task-container">
             <div id="header">
                 <h1>To-Do-List</h1>
-            
             </div>
             <hr>
-
             <div id="task-form">
                 <input 
                     type="text"
@@ -29,18 +23,39 @@
                     id="input-box"
                     
                 />
-                
             </div>
-            
             <hr>
             
             <ul id="task-list"></ul>
         </div>
+
+    <div class = "timer-container">
+        <h1 id = "timer-header">pomodoro</h1>
+        
+            
+        <div class = "timer-counter-box">
+            <p>
+                <label for="minutes">Minutes</label>
+                <input type="text" class="minutes" value="25" min="0">
+            </p>
+            <p>
+                <label for="seconds">Seconds</label>
+                <input type="text" class="seconds" value="00" min="0" max="59"> 
+            </p>
+        </div>
+        <button class = "btn-start">Start</button>
+        </div>
+        
+    </div>
+
+    
+
 
     
     
 
     
     <script type="text/javascript" src="script.js"></script>
+    <script type = "text/javascript" src="pomodoro.js"></script>
 </body>
 </html>

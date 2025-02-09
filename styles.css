@@ -1,4 +1,19 @@
 
+
+#headtext{ 
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 45px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #ffffff;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: -3px 2px 0px #000000;
+  
+  
+}
+
 body {
   background: url("img-noise-361x370.png") repeat;
 }
@@ -28,15 +43,21 @@ body {
   color: rgb(255, 255, 255) ;
 }
 
-hr{
-  color: white;
+#titleline{
+  color: rgb(0, 0, 0);
+  border: 3px solid;
 }
+
+
 
 /* ========== Task Form ========== */
 #task-form {
   text-align: center;
 }
 
+hr {
+  color: white;
+}
 
 
 #input-box {
@@ -96,7 +117,6 @@ li:hover {
 
 
 
-
 /* ========== Task Buttons ========== */
 .delete-btn {
   padding: 6px 12px;
@@ -119,3 +139,50 @@ li:hover {
 .delete-btn:hover {
   background-color: #da190b;
 }
+
+
+/* Pomodoro Timer */
+
+
+.timer-container {
+  position: absolute; /* Remove it from the normal document flow */
+  top: 75px;          /* Adjust the top offset */
+  right: 10px;        /* Adjust the right offset */
+  /* Optional styling */
+  width: 200px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #fbfbfb;
+  border-radius: 1px;
+  font-size: 20px;
+  background-color:  #000000;
+}
+
+#timer-header{
+  text-align: center;
+  font-size: 25px;
+  
+  
+  font-style: italic; 
+  color: rgb(255, 255, 255) ;
+}
+
+
+
+input {
+  width: 50px;
+  text-align: center;
+}
+
+button {
+  position: relative;
+  
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid;
+  
+  background: white;
+  
+}
+
